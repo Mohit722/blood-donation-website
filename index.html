@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blood Donation Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff4757;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b81;
+        }
+
+        .hero {
+            background: url('https://static.toiimg.com/photo/69024200.cms') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            background-color: #ff4757;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff6b81;
+        }
+
+        .mission {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .mission .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-nav {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-nav li {
+            margin: 0 15px;
+        }
+
+        .footer-nav li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-nav li a:hover {
+            color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h2>@RedDropLife</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="register-donor.html">Register as Donor</a></li>
+                <li><a href="register-patient.html">Register as Patient</a></li>
+                <li><a href="request-blood.html">Request Blood</a></li>
+                <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Blood Donation Platform</h1>
+                <p>Your contribution can save lives. Join us in making a difference!</p>
+                <a href="register-donor.html" class="cta-button">Get Started</a>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>We are dedicated to creating a future where no one suffers due to a lack of blood. By connecting generous blood donors with patients in critical need, we strive to bridge the gap and ensure that every life-threatening situation is met with timely support. Our mission, Vision 2028, is to create a world where no one faces the fear of not finding the blood they need. Your contribution today can make a life-saving difference tomorrow. Join us in this vital mission and help us achieve a healthier, safer future for all.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p>&copy; 2024 RedDropLife</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

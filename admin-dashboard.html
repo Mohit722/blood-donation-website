@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header nav {
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .dashboard-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-section h2 {
+            margin-top: 0;
+        }
+
+        .metric-card {
+            background-color: #e3f2fd;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .metric-card .value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .metric-card .description {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Add other pages as needed -->
+            </ul>
+        </nav>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="dashboard-section">
+            <h2>Current Statistics</h2>
+            <div class="metric-card">
+                <div>
+                    <h3>Total Donors</h3>
+                    <p class="description">Number of registered donors</p>
+                </div>
+                <div class="value" id="total-donors">0</div>
+            </div>
+            <div class="metric-card">
+                <div>
+                    <h3>Lives Saved</h3>
+                    <p class="description">Number of lives saved with donated blood</p>
+                </div>
+                <div class="value" id="lives-saved">0</div>
+            </div>
+            <div class="metric-card">
+                <div>
+                    <h3>Lives Lost</h3>
+                    <p class="description">Number of lives lost due to lack of blood</p>
+                </div>
+                <div class="value" id="lives-lost">0</div>
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Manage Requests</h2>
+            <!-- Display and manage blood requests -->
+        </section>
+        
+        <section class="dashboard-section">
+            <h2>Manage Donors</h2>
+            <!-- Display and manage donor information -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Blood Donation Platform</p>
+    </footer>
+
+    <!-- JavaScript for Dynamic Data -->
+    <script>
+        // Simulated data for demonstration purposes
+        document.getElementById('total-donors').textContent = '1200';
+        document.getElementById('lives-saved').textContent = '850';
+        document.getElementById('lives-lost').textContent = '50';
+
+        // In a real-world application, you would fetch this data from a server
+        // and update the values dynamically.
+    </script>
+</body>
+</html>
